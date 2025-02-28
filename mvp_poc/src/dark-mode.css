@@ -1,0 +1,59 @@
+/* src/dark-mode.css */
+body {
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
+  }
+  
+  .ant-layout {
+    background: #1a1a1a; /* Match body background */
+  }
+  
+  .ant-menu {
+    background: #2a2a2a; /* Darker sidebar */
+    color: #b0b0b0; /* Light text for menu */
+  }
+  
+  .ant-menu-item-selected {
+    background-color: #333333 !important; /* Selected item highlight */
+    color: #ffffff !important;
+  }
+  
+  .ant-menu-item:hover {
+    background-color: #404040 !important; /* Hover effect */
+    color: #ffffff !important;
+  }
+  
+  .ant-table {
+    background: #2a2a2a; /* Dark table background */
+    color: #e0e0e0; /* Light text */
+  }
+  
+  .ant-table-thead > tr > th {
+    background: #333333; /* Dark header */
+    color: #ffffff;
+  }
+  
+  .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #404040; /* Subtle border */
+  }
+  
+  .ant-btn-primary {
+    background-color: #1890ff; /* Keep Ant Design primary blue */
+    border-color: #1890ff;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #40a9ff; /* Lighter blue on hover */
+    border-color: #40a9ff;
+  }
+  
+  .ant-input,
+  .ant-input-password {
+    background-color: #333333; /* Dark input fields */
+    color: #e0e0e0;
+    border-color: #404040;
+  }
+  
+  .ant-form-item-explain {
+    color: #ffcccc; /* Softer error text */
+  }

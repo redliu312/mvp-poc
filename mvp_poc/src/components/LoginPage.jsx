@@ -10,7 +10,7 @@ const LoginPage = ({ setIsAuthenticated }) => {
     setLoading(true);
     // Mock API call
     setTimeout(() => {
-      if (values.username === "admin" && values.password === "password") {
+      if (values.username === "admin" && values.password === "admin") {
         setIsAuthenticated(true);
         message.success("Login successful!");
         navigate("/tasks");
