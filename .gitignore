@@ -32,6 +32,7 @@ lerna-debug.log*
 
 # Python specific
 __pycache__/
+*.pyc
 *.py[cod]
 *.so
 *.pyd
