@@ -9,7 +9,7 @@ import Status from "./components/Status";
 const { Content } = Layout;
 
 const App = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // Start as not authenticated
 
   return (
     <Router>
@@ -24,15 +24,15 @@ const App = () => {
               />
               <Route
                 path="/scheduled-tasks"
-                element={isAuthenticated ? <ScheduledTasks /> : <Navigate to="/login" />}
+                element={isAuthenticated ? <ScheduledTasks setIsAuthenticated={setIsAuthenticated} /> : <Navigate to="/login" />}
               />
               <Route
                 path="/trigger-tasks"
-                element={isAuthenticated ? <TriggerTasks /> : <Navigate to="/login" />}
+                element={isAuthenticated ? <TriggerTasks setIsAuthenticated={setIsAuthenticated} /> : <Navigate to="/login" />}
               />
               <Route
                 path="/status"
-                element={isAuthenticated ? <Status /> : <Navigate to="/login" />}
+                element={isAuthenticated ? <Status setIsAuthenticated={setIsAuthenticated} /> : <Navigate to="/login" />}
               />
               <Route path="/" element={<Navigate to={isAuthenticated ? "/status" : "/login"} />} />
             </Routes>
